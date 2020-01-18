@@ -9,7 +9,7 @@ import { Repo } from '../../app/repo';
 })
 export class ProfileComponent implements OnInit {
   
-  repos:any;
+  repos:any= Repo;
   profile:any;
   username:string;
 
@@ -27,10 +27,14 @@ export class ProfileComponent implements OnInit {
     this.userProfileService.getProfileRepos().subscribe(repos => {
       console.log(repos);
       this.repos = repos;
-    })
+    });
   }
+  
 
   ngOnInit() {
+    this.userProfileService.updateProfile('ianMK-1');
+    this.userProfileService.getProfileInfo().subscribe(profile => this.profile = profile);
+    this.userProfileService.getProfileRepos().subscribe(repos =>  this.repos = repos);
   }
 
 }
