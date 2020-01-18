@@ -1,5 +1,5 @@
 .jumbotron {
-    background-color: black;
+    background-color: rgb(66, 61, 61);
 }
 .jumbotron h1 {
     color: white;
@@ -9,4 +9,7 @@
 }
 h1 {
     font: bold;
+}
+.panel {
+    font-family: 'Cabin', sans-serif;
 }
