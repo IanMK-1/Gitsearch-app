@@ -7,7 +7,7 @@
     font-size: 50px;
     text-align: center;
 }
-.panel {
+.card {
     font-family: 'Cabin', sans-serif;
 }
 .info {
@@ -16,4 +16,9 @@
 }
 span {
     margin-right: 3px;
+}
+.about {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    margin-bottom: 50px;
 }
