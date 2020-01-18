@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { UserProfileService } from '../app/user-profile.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +15,7 @@ import { ProfileComponent } from './profile/profile.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [UserProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
