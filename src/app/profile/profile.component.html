@@ -44,7 +44,7 @@
                         </div>
                         <div class="card-body" *ngFor="let repo of repos">
                             <p>
-                                {{repo.name}}{{repo.html_url}}
+                                {{repo.name}}<a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning">View project on github</a>
                             </p>
                         </div>
                     </div>
