@@ -11,7 +11,7 @@ import { environment } from '../../src/environments/environment';
 export class UserProfileService {
 
   username: User;
-
+ 
   constructor(private httpClient: HttpClient ) {
     console.log("service is now ready");
     this.username = new User("");
@@ -24,5 +24,8 @@ export class UserProfileService {
 
    getProfileRepos(){
     return this.httpClient.get("https://api.github.com/users/" + this.username.username + "/repos?access_token=" + environment.tokenKey);
+   }
+   updateProfile(username:string){
+     this.username.username = username;
    }
 }

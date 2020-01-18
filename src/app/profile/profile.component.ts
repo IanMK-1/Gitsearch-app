@@ -9,11 +9,16 @@ import { Repo } from '../../app/repo';
 })
 export class ProfileComponent implements OnInit {
   
-  repos:any= Repo;
+  repos:any;
   profile:any;
   username:string;
-  
+
   constructor(private userProfileService: UserProfileService) { 
+    
+  }
+
+  findProfile(){
+    this.userProfileService.updateProfile(this.username);
     this.userProfileService.getProfileInfo().subscribe(profile =>{
       console.log(profile);
       this.profile = profile;
@@ -23,10 +28,6 @@ export class ProfileComponent implements OnInit {
       console.log(repos);
       this.repos = repos;
     })
-  }
-
-  findProfile(){
-    this.userProfileService.updateProfile(this.username);
   }
 
   ngOnInit() {
