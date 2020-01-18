@@ -8,10 +8,12 @@ import { UserProfileService } from '../../app/user-profile.service';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor(public userProfileService: UserProfileService) { 
+  profile:any;
+  constructor(private userProfileService: UserProfileService) { 
     this.userProfileService.getProfileInfo().subscribe(profile =>{
       console.log(profile);
-    })
+      this.profile = profile;
+    });
   }
 
   ngOnInit() {

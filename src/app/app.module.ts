@@ -17,7 +17,7 @@ import { ProfileComponent } from './profile/profile.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [UserProfileService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
