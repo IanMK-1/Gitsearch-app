@@ -15,10 +15,14 @@ export class UserProfileService {
   constructor(private httpClient: HttpClient ) {
     console.log("service is now ready");
     this.username = new User("");
-    this.username.username = "kirandash";
+    this.username.username = "ianMk-1";
    }
 
    getProfileInfo(){
      return this.httpClient.get("https://api.github.com/users/" + this.username.username + "?access_token=" + environment.tokenKey);
+   }
+
+   getProfileRepos(){
+    return this.httpClient.get("https://api.github.com/users/" + this.username.username + "/repos?access_token=" + environment.tokenKey);
    }
 }

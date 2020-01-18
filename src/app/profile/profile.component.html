@@ -38,6 +38,16 @@
                         <span class="badge badge-info">{{profile.public_repos}} Public repos</span>
                     </p>
                     <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-primary btn-sm">View profile on github</a></p>
+                    <div class="card">
+                        <div class="card-heading">
+                            <h3>Repositories</h3>
+                        </div>
+                        <div class="card-body" *ngFor="let repo of repos">
+                            <p>
+                                {{repo.name}}{{repo.html_url}}
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
