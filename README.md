@@ -4,7 +4,7 @@
 
 #### This application allows a user to search for any user on github using their usernames. The application will display thier profile pictures, some details about the user such as bio, hireable status, email and blog link and also their public repositories.
 
-![Github-user-search-app](/images/pic.png)
+![Github-user-search-app](/images/Gitsearch.png)
 
 ## Setup/Installation Requirements
 - You will need either a computer or phone that can access the internet.
