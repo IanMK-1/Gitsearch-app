@@ -1,27 +1,39 @@
-# Gitsearch
+# GITHUB USER SEARCH APP
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+#### By Ian Mwangi
 
-## Development server
+#### This application allows a user to search for any user on github using their usernames. The application will display thier profile pictures, some details about the user such as bio, hireable status, email and blog link and also their public repositories.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![Github-user-search-app](/images/pic.png)
 
-## Code scaffolding
+## Setup/Installation Requirements
+- You will need either a computer or phone that can access the internet.
+- Then you will click on the link below to go to website.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Languages used
+- HTML
+- CSS
+- Typescript
 
-## Build
+### Technologies Used
+- Visual Studio code
+- Ubuntu terminal
+- Bootstrap
+- Github
+- Angular
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Contributing
+- Fork it!
+- Create your feature branch: `git checkout -b my-new-feature`
+- Commit your changes: `git commit -am 'Add some feature'`
+- Push to the branch: `git push origin my-new-feature`
+- Submit a pull request :D
 
-## Running unit tests
+### Link
+[Github](https://github.com/IanMK-1/Gitsearch-app)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Contacts
+Email: iankimotho233@gmail.com
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Licence
+[The MIT License (MIT)](LICENCE.md)
