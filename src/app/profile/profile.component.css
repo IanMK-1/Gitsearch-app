@@ -7,9 +7,10 @@
     font-size: 50px;
     text-align: center;
 }
-h1 {
-    font: bold;
-}
 .panel {
     font-family: 'Cabin', sans-serif;
+}
+.info {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
