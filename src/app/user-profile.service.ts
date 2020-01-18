@@ -12,12 +12,12 @@ export class UserProfileService {
 
   username: User;
 
-  constructor(private http: HttpClient) {
+  constructor(private httpClient: HttpClient) {
     console.log("service is now ready");
     this.username.username = 'ianMK-1';
    }
 
    getProfileInfo(){
-     return this.http.get("https://api.github.com/users/" + this.username.username + "?access_token=" + environment.tokenKey);
+     return this.httpClient.get("https://api.github.com/users/" + this.username.username + "?access_token=" + environment.tokenKey);
    }
 }
