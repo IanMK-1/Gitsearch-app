@@ -6,6 +6,11 @@
             </div>
         </div>
     </div>
+    <form>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter the github username"[(ngModel)]="username" name="username" (keyup)="findProfile()">
+        </div>
+    </form>
     <div *ngIf="profile">
         <div class="row">
             <div class="col-md-12">
@@ -39,14 +44,14 @@
                     </p>
                     <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-primary btn-sm">View profile on github</a></p>
                     <div class="card">
-                        <div class="card-heading">
-                            <h3>Repositories</h3>
+                        <div class="card-heading text-center">
+                            <h3><b>Repositories</b></h3>
                         </div>
                         <div class="card-body" *ngFor="let repo of repos">
                             <p>
-                                {{repo.name}}<a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning">View project on github</a>
+                                <b>{{repo.name}}</b><a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning float-right">View project on github</a>
                             </p>
-                            <p>{{repo.description}}</p>
+                            <p class="list-group-item">{{repo.description}}</p>
                         </div>
                     </div>
                 </div>
