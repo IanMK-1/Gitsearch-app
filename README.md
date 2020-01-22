@@ -32,6 +32,9 @@
 ### Link
 [Github](https://github.com/IanMK-1/Gitsearch-app)
 
+### CodeBeat Link
+[![codebeat badge](https://codebeat.co/badges/048f05b0-457b-4afd-99ef-c6f717bff8fa)](https://codebeat.co/projects/github-com-ianmk-1-gitsearch-app-master)
+
 ### Contacts
 Email: iankimotho233@gmail.com
 
